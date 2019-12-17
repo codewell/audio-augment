@@ -2,6 +2,7 @@ import numpy as np
 
 
 def change_speed_and_pitch(audio, p=0.5, low=0.85, high=1.15):
+    audio = audio.copy()
     if np.random.random() > p:
         return audio
     length_change = np.random.uniform(low=low, high=high)

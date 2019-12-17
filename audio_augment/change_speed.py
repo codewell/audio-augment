@@ -3,6 +3,7 @@ import librosa
 
 
 def change_speed(audio, p=0.5, low=0.8, high=1.2):
+    audio = audio.copy()
     if np.random.random() > p:
         return audio
     speed_change = np.random.uniform(low=low, high=high)

@@ -2,6 +2,7 @@ import numpy as np
 
 
 def timeshift(audio, p=0.5, strength=0.2):
+    audio = audio.copy()
     if np.random.random() > p:
         return audio
     timeshift_factor = strength * (np.random.uniform() - 0.5) * 2

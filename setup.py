@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
    name='audio_augment',
-   version='0.0.1',
+   version='0.0.2',
    description='Augmentation library for raw audio waveforms',
    author='Felix Abrahamsson',
    author_email='FelixAbrahamsson@github.com',
